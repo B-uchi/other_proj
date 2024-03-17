@@ -17,12 +17,8 @@ const Risk = () => {
               acknowledge the inherent risks involved, which include potential
               loss of capital and illiquidity.
             </p>
-            <p>
-              We strongly advise reviewing our Risk Warning statement prior to
-              making any investment decisions.
-            </p>
           </div>
-          <button onClick={hideRisk} className="ml-2 focus:outline-none">
+          <button onClick={hideRisk} className="-ml-2 focus:outline-none">
             <IoMdClose color="red" />
           </button>
         </div>
