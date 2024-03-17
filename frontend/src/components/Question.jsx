@@ -2,7 +2,7 @@ import React from "react";
 
 const Question = () => {
   return (
-    <div className="p-5 lg:mt-48 bg-[#EEEFEB] dotOverlay">
+    <div className="p-5 bg-[#EEEFEB] dotOverlay">
       <div className="container mx-auto flex flex-col items-center">
         <div className="text-center">
           <h1 className="font-bold font-montserrat text-2xl">

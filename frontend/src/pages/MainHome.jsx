@@ -20,6 +20,7 @@ function MainHome() {
       <Stats />
       <Why />
       <WhyVantage/>
+      <Testimonials/>
       <Question/>
       <Footer/>
       <div className="fixed bottom-0 w-full">
