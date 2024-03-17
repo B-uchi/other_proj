@@ -19,31 +19,31 @@ const WhyVantage = () => {
       message:
         "Impressed by Vantage's professionalism and efficiency! They made the investment process seamless, from property selection to closing. The team's expertise and dedication ensured I made informed decisions, resulting in excellent returns. I'm grateful for their support and look forward to future collaborations.",
     },
-    {
-      name: "Emily Rodriguez",
-      message:
-        "Vantage exceeded my expectations with their top-notch service and unparalleled expertise. Their team went above and beyond to understand my investment goals and tailored solutions to meet them. Thanks to Vantage, I've achieved financial milestones beyond what I thought possible. Highly recommend!",
-    },
-    {
-      name: "Michael Thompson",
-      message:
-        "Choosing Vantage for my real estate investments was the best decision I made. Their comprehensive market analysis and strategic insights helped me identify high-potential properties. With their support, I've built a robust portfolio and enjoyed consistent returns. Trustworthy, reliable, and highly recommended!",
-    },
+    // {
+    //   name: "Emily Rodriguez",
+    //   message:
+    //     "Vantage exceeded my expectations with their top-notch service and unparalleled expertise. Their team went above and beyond to understand my investment goals and tailored solutions to meet them. Thanks to Vantage, I've achieved financial milestones beyond what I thought possible. Highly recommend!",
+    // },
+    // {
+    //   name: "Michael Thompson",
+    //   message:
+    //     "Choosing Vantage for my real estate investments was the best decision I made. Their comprehensive market analysis and strategic insights helped me identify high-potential properties. With their support, I've built a robust portfolio and enjoyed consistent returns. Trustworthy, reliable, and highly recommended!",
+    // },
   ];
 
   return (
     <div
-      className="h- mt-10 w-full bg-center bg-fixed"
+      className="relative mt-10 p-5 lg:h-[80vh] w-full bg-center bg-fixed"
       style={{ backgroundImage: `url(${why})` }}
     >
-      <div className="p-5 container mx-auto flex items-center flex-col">
+      <div className="p- container mx-auto flex items-center flex-col">
         <div className="bg-gray-200 p-3 rounded-lg">
           <h1 className="text-xl font-montserrat">
-            Investing with us is a breeze
+            Hear what they say about us
           </h1>
         </div>
 
-        <div className="w-[80%] mt-6 flex flex-col items-center">
+        <div className="lg:w-[80%] w-full mt-6 flex flex-col items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-gray-100 p-4 rounded-lg">
@@ -54,39 +54,37 @@ const WhyVantage = () => {
               </div>
             ))}
           </div>
-          <div className="mt-10 bg-gray-200 p-3 w-fit rounded-lg">
-            <h1 className="text-xl font-montserrat">
-              We offer simple yet sophisticated services
-            </h1>
-          </div>
-          <div className="mt-5 w-full">
-            <div className="flex justify-between gap-10 lg:flex-row flex-col">
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <MdOutlineExplore size={30} />
-                <p>Explore Opportunities</p>
-              </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <TbWorldSearch size={30} />
-                <p>Research and Analyze</p>
-              </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <MdOutlineSupportAgent size={30} />
-                <p>Connect with Experts</p>
-              </div>
+        </div>
+      </div>
+      <div className="lg:absolute lg:left-[50%] mt-5 lg:-translate-x-[50%] -bottom-[30%] border-[1px] border-black p-6 rounded-lg bg-gradient-to-r from-purple-300 to-blue-400 bg-opacity-85 md:w-[60%] w-[100%]">
+        
+        <div className="mt-3 w-full">
+          <div className="flex justify-between gap-10 lg:flex-row flex-col">
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <MdOutlineExplore size={30} />
+              <p>Explore Opportunities</p>
             </div>
-            <div className="flex justify-between mt-6 gap-10 lg:flex-row flex-col">
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <CiLock size={30} />
-                <p>Secure Your Investment</p>
-              </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <FaChalkboardTeacher size={30} />
-                <p>Track Your Portfolio</p>
-              </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
-                <LuLayoutDashboard size={30} />
-                <p>Portfolio Diversification</p>
-              </div>
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <TbWorldSearch size={30} />
+              <p>Research and Analyze</p>
+            </div>
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <MdOutlineSupportAgent size={30} />
+              <p>Connect with Experts</p>
+            </div>
+          </div>
+          <div className="flex justify-between mt-6 gap-10 lg:flex-row flex-col">
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <CiLock size={30} />
+              <p>Secure Your Investment</p>
+            </div>
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <FaChalkboardTeacher size={30} />
+              <p>Track Your Portfolio</p>
+            </div>
+            <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3">
+              <LuLayoutDashboard size={30} />
+              <p>Portfolio Diversification</p>
             </div>
           </div>
         </div>
