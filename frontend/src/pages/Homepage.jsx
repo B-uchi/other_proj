@@ -8,7 +8,7 @@ const Homepage = () => {
       className="relative h-[100vh] w-full bg-cover bg-center bg-no-repeat bg-fixed justify-center flex"
       style={{ backgroundImage: `url(${landingMain})` }}
     >
-      <div className="absolute top-0">
+      <div className="absolute top-0 w-full">
         <Navbar />
       </div>
       <div className="dotOverlay absolute"></div>

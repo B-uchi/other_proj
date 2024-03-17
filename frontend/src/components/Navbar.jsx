@@ -3,8 +3,8 @@ import MenuItem from "./MenuItem";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex p-3">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+    <nav className="w-full p-3">
+      <div className="mx-auto px-4 flex justify-between items-center w-full">
         <h1 className="font-montserrat font-extrabold text-xl">PROJECT</h1>
         <ul className="md:flex z-40 gap-10 hidden">
           <li className="cursor-pointer">
