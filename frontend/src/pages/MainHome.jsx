@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 function MainHome() {
   return (
-    <div className="">
+    <div className="w-full">
       <Homepage />
       <Trust />
       <HeroSection />
@@ -21,9 +21,6 @@ function MainHome() {
       <Testimonials/>
       <Question/>
       <Footer/>
-      <div className="fixed bottom-0 w-full">
-        <Risk />
-      </div>
     </div>
   );
 }

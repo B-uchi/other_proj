@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 const Navbar = () => {
   return (
     <nav className="w-full flex p-3">
-      <div className="container mx-auto px-4 flex w-[100vw] items-center justify-between">
+      <div className="container mx-auto px-4 flex items-center justify-between">
         <h1 className="font-montserrat font-extrabold text-xl">PROJECT</h1>
         <ul className="md:flex z-40 gap-10 hidden">
           <li className="cursor-pointer">

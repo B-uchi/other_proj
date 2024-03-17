@@ -12,7 +12,7 @@ const Homepage = () => {
         <Navbar />
       </div>
       <div className="dotOverlay absolute"></div>
-      <div className=" p-4 rounded-lg z-30">
+      <div className="p-4 rounded-lg z-30">
         <h1 className="font-montserrat mt-24 text-white md:text-left text-center font-bold text-5xl md:text-6xl">
           VANTAGE INVESTMENTS
         </h1>
