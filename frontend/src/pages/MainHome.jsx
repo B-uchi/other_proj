@@ -21,6 +21,9 @@ function MainHome() {
       <Testimonials/>
       <Question/>
       <Footer/>
+      <div className="fixed bottom-0 w-full">
+        <Risk />
+      </div>
     </div>
   );
 }
