@@ -8,6 +8,7 @@ import WhyVantage from "../components/WhyVantage";
 import Testimonials from "../components/Testimonials";
 import Question from "../components/Question";
 import Footer from "../components/Footer";
+import Listings from "../components/Listings";
 
 function MainHome() {
   return (
@@ -15,10 +16,10 @@ function MainHome() {
       <Homepage />
       <Trust />
       <HeroSection />
+      <Listings/>
       <Stats />
       <Why />
       <WhyVantage/>
-      <Testimonials/>
       <Question/>
       <Footer/>
       <div className="fixed bottom-0 w-full">
