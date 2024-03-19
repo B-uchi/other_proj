@@ -13,10 +13,15 @@ const Homepage = () => {
       </div>
       <div className="dotOverlay absolute"></div>
       <div className="p-4 rounded-lg z-30">
-        <h1 className="font-montserrat mt-24 text-white md:text-left text-center font-bold text-5xl md:text-6xl">
+        <p className="text-center mt-16 text-lg font-bold md:text-left text-gray-700">
+          Real Estate with
+        </p>
+        <h1 className="font-montserrat text-white md:text-left text-center font-bold text-5xl md:text-6xl">
           VANTAGE INVESTMENTS
         </h1>
-        <p className="text-center md:text-right text-gray-700">Real Estate investments redefined...</p>
+        <p className="text-center md:text-right text-gray-700">
+          Real Estate investments redefined...
+        </p>
       </div>
     </div>
   );
