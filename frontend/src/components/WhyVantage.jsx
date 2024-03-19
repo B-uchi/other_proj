@@ -6,50 +6,51 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import { MdOutlineExplore } from "react-icons/md";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuLayoutDashboard } from "react-icons/lu";
+import { CiCircleCheck } from "react-icons/ci";
+import dashboard from "../assets/dashboard.svg";
 
 const WhyVantage = () => {
   return (
-    <div
-      className="mt-10 p-5 w-full bg-center bg-fixed"
-      style={{ backgroundImage: `url(${why})` }}
-    >
-      <div className="p- container mx-auto flex items-center flex-col">
-        <div className="bg-gray-200 p-3 rounded-lg">
-          <h1 className="text-xl font-montserrat">
-            Hear what they say about us
-          </h1>
+    <div className="mt-10 w-full bg-center bg-fixed bg-opacity-90">
+      <div className="p-5 bg-white mx-auto flex flex-col md:flex-row w-[80%] items-center gap-5 justify-center">
+        <div className="md:w-1/2 flex justify-left">
+          <img src={dashboard} className="w-[500px]" alt="" />
         </div>
-        <div className="border-black mt-10 p-6 rounded-lg bg-gradient-to-r from-purple-300 to-blue-400 bg-opacity-85 md:w-[60%] w-[100%]">
+        <div className="md:w-1/2 p-2 md:p-5">
+          <h1 className="font-bold font-montserrat text-2xl md:text-4xl text-blue-900">
+            Investments designed just for you
+          </h1>
           <div className="mt-3 w-full">
-            <div className="flex justify-between gap-10 lg:flex-row flex-col">
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <MdOutlineExplore size={30} />
+            <ul className="flex list-disc text-gray-700 justify-between gap-4 flex-col">
+              <li className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Explore Opportunities</p>
-              </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <TbWorldSearch size={30} />
+              </li>
+              <div className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Research and Analyze</p>
               </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <MdOutlineSupportAgent size={30} />
+              <div className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Connect with Experts</p>
               </div>
-            </div>
-            <div className="flex justify-between mt-6 gap-10 lg:flex-row flex-col">
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <CiLock size={30} />
+              <div className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Secure Your Investment</p>
               </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <FaChalkboardTeacher size={30} />
+              <div className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Track Your Portfolio</p>
               </div>
-              <div className="bg-gray-100 lg:w-1/3 rounded-lg p-6 flex items-center gap-3 shadow-lg">
-                <LuLayoutDashboard size={30} />
+              <div className="flex items-center gap-3 ">
+                <CiCircleCheck size={27} color="blue"/>
                 <p>Portfolio Diversification</p>
               </div>
-            </div>
+            </ul>
           </div>
+          <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg bg-gradient-to-r from-slate-300 to-blue-400 hover:from-blue-400 hover:to-purple-300 transition-all">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
