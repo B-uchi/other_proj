@@ -4,16 +4,19 @@ import { FaChevronDown } from "react-icons/fa";
 import { AiOutlineGold } from "react-icons/ai";
 import { FaHouse } from "react-icons/fa6";
 import { IoBarChart } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({showNavbar}) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
+  const style = showNavbar ? "w-full p-3 h-[8vh] bg-white shadow-md border-b-[1px] border-[#efefef] -z-20" : "w-full p-3 h-[8vh] bg-transparent"
+
   return (
-    <nav className="w-full p-3">
+    <nav className={style}>
       <div className="mx-auto relative px-4 flex justify-between items-center w-full">
         <button className="flex items-center gap-3 z-40" onClick={toggleMenu}>
           <h1 className="font-montserrat font-extrabold text-xl">PROJECT</h1>
@@ -24,10 +27,15 @@ const Navbar = () => {
         </button>
         <ul className="md:flex z-40 gap-10 hidden">
           <li className="cursor-pointer">
-            <MenuItem text={"Home"} />
+            <a href="/" target="_parent">
+              <MenuItem text={"Home"} />
+            </a>
           </li>
           <li className="cursor-pointer">
-            <MenuItem text={"Listings"} />
+            <a href="/listings" target="_parent">
+              {" "}
+              <MenuItem text={"Listings"} />
+            </a>
           </li>
           <li className="cursor-pointer">
             <MenuItem text={"How It Works"} />

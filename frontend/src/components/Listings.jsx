@@ -95,7 +95,7 @@ const Listings = () => {
             ))}
           </div>
           <p className="text-center text-purple-700 underline">
-            <a href="">View more</a>
+            <a href="/listings">View more</a>
           </p>
         </div>
       </div>

@@ -12,7 +12,7 @@ import dashboard from "../assets/dashboard.svg";
 const WhyVantage = () => {
   return (
     <div className="mt-10 w-full bg-center bg-fixed bg-opacity-90">
-      <div className="p-5 bg-white mx-auto flex flex-col md:flex-row w-[80%] items-center gap-5 justify-center">
+      <div className="p-5 bg-white rounded-lg shadow-md mx-auto flex flex-col md:flex-row w-[80%] items-center gap-5 justify-center">
         <div className="md:w-1/2 flex justify-left">
           <img src={dashboard} className="w-[500px]" alt="" />
         </div>
@@ -48,7 +48,7 @@ const WhyVantage = () => {
               </div>
             </ul>
           </div>
-          <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg bg-gradient-to-r from-slate-300 to-blue-400 hover:from-blue-400 hover:to-purple-300 transition-all">
+          <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg font-bold text-white bg-blue-400">
             Get Started
           </button>
         </div>

@@ -16,26 +16,11 @@ const Question = () => {
           <form className="flex flex-col gap-3" action="" method="post">
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Ask your question...."
               className="p-3 rounded-md border-2 border-gray-200"
             />
-            <input
-              type="email"
-              placeholder="Email"
-              className="p-3 rounded-md border-2 border-gray-200"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="p-3 rounded-md border-2 border-gray-200"
-            />
-            <textarea
-              placeholder="Message"
-              className="p-3 rounded-md border-2 border-gray-200"
-              rows={5}
-            ></textarea>
-            <button className="mt-5 p-3 rounded-lg bg-gradient-to-r from-slate-300 to-blue-400 hover:from-blue-400 hover:to-purple-300 transition-all font-bold text-lg mx-auto md:w-1/2">
-              Send
+            <button className="mt-5 p-3 rounded-lg bg-blue-400 transition-all font-bold text-lg mx-auto text-white md:w-1/2">
+              Proceed
             </button>
           </form>
         </div>

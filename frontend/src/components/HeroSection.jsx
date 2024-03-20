@@ -5,6 +5,7 @@ import { FaHouseCircleCheck } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
 
 const HeroSection = () => {
+ 
   return (
     <div className="">
       <div className="w-full flex flex-col-reverse md:flex-row md:h-[70vh]">
@@ -22,7 +23,7 @@ const HeroSection = () => {
           <div className="mt-5 flex flex-col">
             <div className="">
               <p className="text-center md:text-left">Get started in 3 <span className="text-purple-700">easy</span> steps:</p>
-              <div className=" w-full mt-5 flex justify-evenly">
+              <div className=" w-full mt-5 flex justify-between">
                 <div className="flex flex-col items-center p-4 bg-gray-100 rounded-md justify-center">
                   <MdOutlinePersonAddAlt size={20}/>
                   <small>1. Register</small>
@@ -38,7 +39,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg bg-gradient-to-r from-slate-300 to-blue-400 hover:from-blue-400 hover:to-purple-300 transition-all">
+            <button className="mt-5 p-3 rounded-lg bg-blue-400 font-bold text-white">
               Get Started
             </button>
           </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Property = ({ property }) => {
   const { img, street, location, roi, target } = property;
   return (
-    <div className="shadow-lg bg-gray-100 rounded-lg">
+    <div className="shadow-lg bg-gray-100 rounded-lg ">
       <div className="w-[300px] ">
         <img src={img} className="w-full rounded-t-lg" alt="" />
       </div>
