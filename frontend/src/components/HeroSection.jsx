@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="bg-[#F9FBFC] md:w-[50%] p-10 flex flex-col justify-center">
           <div className="text-center md:text-left ">
             <h1 className="text-3xl font-lato z-30 md:w-[80%]">
-              Investing in Real Estate has never been <span className="text-purple-700">easier</span>
+              Investing in Real Estate has never been <span className="bg-black text-white px-1 rounded-md">easier</span>
             </h1>
             <p className="mt-6">
               With our user-friendly platform and expert support, investing in
@@ -22,7 +22,7 @@ const HeroSection = () => {
           </div>
           <div className="mt-5 flex flex-col">
             <div className="">
-              <p className="text-center md:text-left">Get started in 3 <span className="text-purple-700">easy</span> steps:</p>
+              <p className="text-center md:text-left">Get started in 3 easy steps:</p>
               <div className=" w-full mt-5 flex justify-between">
                 <div className="flex flex-col items-center p-4 bg-gray-100 rounded-md justify-center">
                   <MdOutlinePersonAddAlt size={20}/>
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <button className="mt-5 p-3 rounded-lg bg-blue-400 font-bold text-white">
+            <button className="mt-5 p-3 rounded-lg bg-[#212121] font-bold text-white">
               Get Started
             </button>
           </div>

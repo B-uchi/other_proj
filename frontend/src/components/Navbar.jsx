@@ -4,16 +4,23 @@ import { FaChevronDown } from "react-icons/fa";
 import { AiOutlineGold } from "react-icons/ai";
 import { FaHouse } from "react-icons/fa6";
 import { IoBarChart } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
 
-const Navbar = ({showNavbar}) => {
+const Navbar = ({ showNavbar }) => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  const style = showNavbar ? "w-full p-3 h-[8vh] bg-white shadow-md border-b-[1px] border-[#efefef] -z-20" : "w-full p-3 h-[8vh] bg-transparent"
+  const toggleMobileMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const style = showNavbar
+    ? "w-full p-3 h-[8vh] bg-white shadow-md border-b-[1px] border-[#efefef] -z-20"
+    : "w-full p-3 h-[8vh] bg-transparent";
 
   return (
     <nav className={style}>
@@ -44,9 +51,14 @@ const Navbar = ({showNavbar}) => {
             <MenuItem text={"About"} />
           </li>
         </ul>
-        <div className="z-40">
+        <div className="z-40 md-flex hidden">
           <button className="bg-gray-200 hover:scale-105 transition-all bg-opacity-75 rounded-lg px-2 p-2">
             Get Started
+          </button>
+        </div>
+        <div className="md:hidden">
+          <button>
+            <IoMenu size={28} />
           </button>
         </div>
         {showMenu && (

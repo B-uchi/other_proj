@@ -17,38 +17,38 @@ const WhyVantage = () => {
           <img src={dashboard} className="w-[500px]" alt="" />
         </div>
         <div className="md:w-1/2 p-2 md:p-5">
-          <h1 className="font-bold font-montserrat text-2xl md:text-4xl text-blue-900">
+          <h1 className="font-bold font-montserrat text-2xl md:text-4xl text-[#2f2f2f]">
             Investments designed just for you
           </h1>
           <div className="mt-3 w-full">
             <ul className="flex list-disc text-gray-700 justify-between gap-4 flex-col">
               <li className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Explore Opportunities</p>
               </li>
               <div className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Research and Analyze</p>
               </div>
               <div className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Connect with Experts</p>
               </div>
               <div className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Secure Your Investment</p>
               </div>
               <div className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Track Your Portfolio</p>
               </div>
               <div className="flex items-center gap-3 ">
-                <CiCircleCheck size={27} color="blue"/>
+                <CiCircleCheck size={27} color="black"/>
                 <p>Portfolio Diversification</p>
               </div>
             </ul>
           </div>
-          <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg font-bold text-white bg-blue-400">
+          <button className="mx-auto w-1/2 mt-5 p-3 rounded-lg font-bold text-white bg-[#212121]">
             Get Started
           </button>
         </div>

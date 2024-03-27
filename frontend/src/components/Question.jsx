@@ -19,7 +19,7 @@ const Question = () => {
               placeholder="Ask your question...."
               className="p-3 rounded-md border-2 border-gray-200"
             />
-            <button className="mt-5 p-3 rounded-lg bg-blue-400 transition-all font-bold text-lg mx-auto text-white md:w-1/2">
+            <button className="mt-5 p-3 rounded-lg bg-[#212121] transition-all font-bold text-lg mx-auto text-white md:w-1/2">
               Proceed
             </button>
           </form>

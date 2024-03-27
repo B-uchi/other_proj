@@ -94,7 +94,7 @@ const Listings = () => {
               <Property key={index} property={property} />
             ))}
           </div>
-          <p className="text-center text-purple-700 underline">
+          <p className="text-center underline">
             <a href="/listings">View more</a>
           </p>
         </div>

@@ -71,13 +71,13 @@ const Testimonials = () => {
         <div className="flex justify-center mt-5 gap-7">
           <button
             onClick={prevSlide}
-            className="bg-blue-400 text-white rounded-md p-4 px-4"
+            className="bg-[#212121] text-white rounded-md p-4 px-4"
           >
             <FaChevronLeft />
           </button>
           <button
             onClick={nextSlide}
-            className="bg-blue-400 text-white rounded-md p-4 px-4"
+            className="bg-[#212121] text-white rounded-md p-4 px-4"
           >
             <FaChevronRight />
           </button>

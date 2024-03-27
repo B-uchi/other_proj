@@ -3,7 +3,6 @@ import HeroSection from "../components/HeroSection";
 import Trust from "../components/Trust";
 import Stats from "../components/Stats";
 import Risk from "../components/Risk";
-import Why from "../components/Why";
 import WhyVantage from "../components/WhyVantage";
 import Testimonials from "../components/Testimonials";
 import Question from "../components/Question";
@@ -18,7 +17,6 @@ function MainHome() {
       <HeroSection />
       <Listings/>
       <Stats />
-      <Why />
       <WhyVantage/>
       <Testimonials/>
       <Question/>
