@@ -4,7 +4,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { AiOutlineGold } from "react-icons/ai";
 import { FaHouse } from "react-icons/fa6";
 import { IoBarChart } from "react-icons/io5";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 const Navbar = ({ showNavbar }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = ({ showNavbar }) => {
   };
 
   const toggleMobileMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMobileMenu(!showMenu);
   };
 
   const style = showNavbar
@@ -57,8 +57,8 @@ const Navbar = ({ showNavbar }) => {
           </button>
         </div>
         <div className="md:hidden">
-          <button>
-            <IoMenu size={28} />
+          <button onClick={toggleMobileMenu}>
+            {showMobileMenu? <IoClose size={28} />:<IoMenu size={28} />}
           </button>
         </div>
         {showMenu && (
