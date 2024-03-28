@@ -4,7 +4,7 @@ const Property = ({ property }) => {
   const { img, street, location, roi, target } = property;
   return (
     <div className="shadow-lg bg-gray-100 rounded-lg cursor-pointer">
-      <div className="w-[300px] ">
+      <div className="md:w-[300px] ">
         <img src={img} className="w-full rounded-t-lg" alt="" />
       </div>
       <div className="p-3 text-center">

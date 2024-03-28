@@ -107,7 +107,7 @@ const Listings = () => {
       )}
       <div className="overflow-y-scroll p-4 px-4 flex flex-wrap">
         <div className="flex  justify-around items-center w-full mb-3">
-          <div className="gap-3 flex items-center justify-start w-[70%]">
+          <div className="gap-3 flex items-center justify-start w-full">
             <button onClick={togglePanel}>
               <IoMenu size={30} />
             </button>
@@ -160,7 +160,7 @@ const Listings = () => {
             <Property
               key={index}
               property={property}
-              className="w-full sm:w-1/2 md:w-1/3"
+              className="w-full bg-red-700 sm:w-1/2 md:w-1/3"
               onClick={() => {
                 alert("Yoo nigga!");
               }}
