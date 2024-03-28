@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MenuItem from "./MenuItem";
 import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 import { AiOutlineGold } from "react-icons/ai";
 import { FaHouse } from "react-icons/fa6";
 import { IoBarChart } from "react-icons/io5";
@@ -29,10 +30,7 @@ const Navbar = ({ showNavbar }) => {
       <div className="mx-auto relative px-4 flex justify-between items-center w-full">
         <button className="flex items-center gap-3 z-40" onClick={toggleMenu}>
           <h1 className="font-montserrat font-extrabold text-xl">PROJECT</h1>
-          <div>
-            {" "}
-            <FaChevronDown />{" "}
-          </div>
+          <div>{!showMenu ? <FaChevronDown /> : <FaChevronUp />}</div>
         </button>
         <ul className="md:flex z-40 gap-10 hidden">
           <li className="cursor-pointer">
@@ -60,7 +58,11 @@ const Navbar = ({ showNavbar }) => {
         </div>
         <div className="md:hidden z-40">
           <button onClick={toggleMobileMenu}>
-            {showMobileMenu ? <IoClose size={28} color="red" /> : <IoMenu size={28} />}
+            {showMobileMenu ? (
+              <IoClose size={28} color="red" />
+            ) : (
+              <IoMenu size={28} />
+            )}
           </button>
         </div>
         {showMobileMenu && (
@@ -90,19 +92,19 @@ const Navbar = ({ showNavbar }) => {
           </div>
         )}
         {showMenu && (
-          <div className="p-3 absolute top-[120%] rounded-md left-0 bg-gray-300  z-40 w-[220px] text-md">
+          <div className="p-3 absolute top-[150%] rounded-md left-0 bg-[#ffffff] border-[1px] border-[#efefef]  z-40 w-[220px] text-md">
             <ul>
-              <li className="p-3 border-b-[1px] font-montserrat font-bold border-b-gray-400">
+              <li className="p-3 border-b-[1px] font-montserrat  border-b-gray-400">
                 <a href="/investments" className="flex items-center gap-2">
                   <IoBarChart size={25} /> Investments
                 </a>
               </li>
-              <li className="p-3 border-b-[1px] font-montserrat font-bold border-b-gray-400">
+              <li className="p-3 border-b-[1px] font-montserrat  border-b-gray-400">
                 <a href="" className="flex items-center gap-2">
                   <FaHouse size={25} /> Real Estate
                 </a>
               </li>
-              <li className="p-3 font-montserrat font-bold">
+              <li className="p-3 font-montserrat ">
                 <a href="/metals" className="flex items-center gap-2">
                   <AiOutlineGold size={25} /> Precious Metals
                 </a>
