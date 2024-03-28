@@ -53,7 +53,7 @@ const Navbar = ({ showNavbar }) => {
             <MenuItem text={"About"} />
           </li>
         </ul>
-        <div className="z-40 md-flex hidden">
+        <div className="z-40 md:flex hidden">
           <button className="bg-gray-200 hover:scale-105 transition-all bg-opacity-75 rounded-lg px-2 p-2">
             Get Started
           </button>
