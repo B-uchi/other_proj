@@ -18,7 +18,7 @@ const Risk = () => {
               loss of capital and illiquidity.
             </p>
           </div>
-          <button onClick={hideRisk} className="w-[8%] flex justify-center focus:outline-none">
+          <button onClick={hideRisk} className="w-[8%] z-40 flex justify-center focus:outline-none">
             <IoMdClose color="red" />
           </button>
         </div>
