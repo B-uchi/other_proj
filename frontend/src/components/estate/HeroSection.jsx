@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../assets/hero.png";
+import hero from "../../assets/hero.png";
 import { MdOutlinePersonAddAlt } from "react-icons/md";
 import { FaHouseCircleCheck } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";

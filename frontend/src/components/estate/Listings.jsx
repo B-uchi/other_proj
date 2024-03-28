@@ -1,5 +1,5 @@
 import React from "react";
-import house from "../assets/house.jpg";
+import house from "../../assets/house.jpg";
 import Property from "./Property";
 
 const Listings = () => {

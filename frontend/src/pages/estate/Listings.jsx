@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import house from "../assets/house.jpg";
+import house from "../../assets/house.jpg";
 import { IoMdSearch } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
-import Property from "../components/Property";
+import Property from "../../components/estate/Property";
 import { IoClose, IoMenu } from "react-icons/io5";
 
 const Listings = () => {
   const [searchParam, setSearchParam] = useState("");
   const [showSearch, setShowSearch] = useState(false);
-  const [showPanel, setShowPanel] = useState(true);
+  const [showPanel, setShowPanel] = useState(false);
   const properties = [
     {
       img: house,
@@ -94,9 +94,9 @@ const Listings = () => {
   };
 
   return (
-    <div className="overflow-y-auto h-[92vh] relative flex">
+    <div className="overflow-y-auto h-auto relative flex">
       {showPanel && (
-        <div className="absolute h-full w-[25%] left-0 bg-[#f7f7f7] border-r-[1px] border-[#efefef] p-3">
+        <div className="absolute h-full w-[80%] md:w-[25%] left-0 bg-[#f7f7f7] border-r-[1px] border-[#efefef] p-3">
           <div className="flex justify-between items-center px-2">
             <h1 className="text-xl font-bold ">Filter Properties</h1>
             <button onClick={togglePanel}>

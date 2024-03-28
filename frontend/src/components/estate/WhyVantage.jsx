@@ -1,5 +1,5 @@
 import React from "react";
-import why from "../assets/why.jpg";
+import why from "../../assets/why.jpg";
 import { TbWorldSearch } from "react-icons/tb";
 import { CiLock } from "react-icons/ci";
 import { MdOutlineSupportAgent } from "react-icons/md";
@@ -7,7 +7,7 @@ import { MdOutlineExplore } from "react-icons/md";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { CiCircleCheck } from "react-icons/ci";
-import dashboard from "../assets/dashboard.svg";
+import dashboard from "../../assets/dashboard.svg";
 
 const WhyVantage = () => {
   return (

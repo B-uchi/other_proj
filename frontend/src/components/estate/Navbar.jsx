@@ -12,14 +12,16 @@ const Navbar = ({ showNavbar }) => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+    setShowMobileMenu(false);
   };
 
   const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMenu);
+    setShowMobileMenu(!showMobileMenu);
+    setShowMenu(false);
   };
 
   const style = showNavbar
-    ? "w-full p-3 h-[8vh] bg-white shadow-md border-b-[1px] border-[#efefef] -z-20"
+    ? "w-full p-3 h-fit bg-white shadow-md border-b-[1px] border-[#efefef] -z-20"
     : "w-full p-3 h-[8vh] bg-transparent";
 
   return (
@@ -58,14 +60,40 @@ const Navbar = ({ showNavbar }) => {
         </div>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu}>
-            {showMobileMenu? <IoClose size={28} />:<IoMenu size={28} />}
+            {showMobileMenu ? <IoClose size={28} color="red" /> : <IoMenu size={28} />}
           </button>
         </div>
+        {showMobileMenu && (
+          <div className="absolute top-[180%] z-40 left-0 p-5 bg-white w-full">
+            <ul className="gap-4 flex flex-col items-center">
+              <li className="cursor-pointer">
+                <a href="/" target="_parent">
+                  <MenuItem text={"Home"} />
+                </a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/listings" target="_parent">
+                  {" "}
+                  <MenuItem text={"Listings"} />
+                </a>
+              </li>
+              <li className="cursor-pointer">
+                <MenuItem text={"How It Works"} />
+              </li>
+              <li className="cursor-pointer">
+                <MenuItem text={"About"} />
+              </li>
+              <button className="bg-gray-200 hover:scale-105 transition-all bg-opacity-75 rounded-lg px-2 p-2">
+                Get Started
+              </button>
+            </ul>
+          </div>
+        )}
         {showMenu && (
           <div className="p-3 absolute top-[120%] rounded-md left-0 bg-gray-300  z-40 w-[220px] text-md">
             <ul>
               <li className="p-3 border-b-[1px] font-montserrat font-bold border-b-gray-400">
-                <a href="" className="flex items-center gap-2">
+                <a href="/investments" className="flex items-center gap-2">
                   <IoBarChart size={25} /> Investments
                 </a>
               </li>
@@ -75,7 +103,7 @@ const Navbar = ({ showNavbar }) => {
                 </a>
               </li>
               <li className="p-3 font-montserrat font-bold">
-                <a href="" className="flex items-center gap-2">
+                <a href="/metals" className="flex items-center gap-2">
                   <AiOutlineGold size={25} /> Precious Metals
                 </a>
               </li>

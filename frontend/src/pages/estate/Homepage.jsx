@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import landingMain from "../assets/landingmain.jpg";
+import Navbar from "../../components/estate/Navbar";
+import landingMain from "../../assets/landingmain.jpg";
 
 const Homepage = () => {
   return (

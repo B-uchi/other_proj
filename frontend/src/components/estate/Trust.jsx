@@ -1,12 +1,12 @@
 import React from "react";
-import bbc from "../assets/trust/BBC.png";
-import forbes from "../assets/trust/Forbes.png";
-import infobae from "../assets/trust/Infobae.png";
-import trust1 from "../assets/trust/trust1.svg";
-import trust2 from "../assets/trust/trust2.svg";
-import trust3 from "../assets/trust/trust3.svg";
-import trust4 from "../assets/trust/trust4.svg";
-import trust5 from "../assets/trust/trust5.svg";
+import bbc from "../../assets/trust/BBC.png";
+import forbes from "../../assets/trust/Forbes.png";
+import infobae from "../../assets/trust/Infobae.png";
+import trust1 from "../../assets/trust/trust1.svg";
+import trust2 from "../../assets/trust/trust2.svg";
+import trust3 from "../../assets/trust/trust3.svg";
+import trust4 from "../../assets/trust/trust4.svg";
+import trust5 from "../../assets/trust/trust5.svg";
 
 const Trust = () => {
   return (
