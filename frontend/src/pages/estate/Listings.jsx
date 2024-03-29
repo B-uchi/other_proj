@@ -3,13 +3,14 @@ import house from "../../assets/house.jpg";
 import { IoMdSearch } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import Property from "../../components/estate/Property";
-import { IoClose, IoMenu } from "react-icons/io5";
 import { Toaster } from "sonner";
+import { FaChevronDown } from "react-icons/fa";
 
 const Listings = () => {
   const [searchParam, setSearchParam] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
+  const [expandFilter, setExpandFilter] = useState(false);
   const properties = [
     {
       img: house,
@@ -17,6 +18,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -24,6 +29,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -31,6 +40,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -38,6 +51,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -45,6 +62,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -52,6 +73,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -59,6 +84,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -66,6 +95,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -73,6 +106,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -80,6 +117,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -87,9 +128,14 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
   ];
 
+  const filterOptionsStyle = expandFilter ? "flex flex-col md:w-1/4" : "md:flex md:flex-col md:w-1/4 hidden";
 
   return (
     <div className="overflow-y-auto p-4 h-auto relative flex flex-col">
@@ -102,50 +148,69 @@ const Listings = () => {
       <div className="w-full mt-5 bg-white border-[2px] rounded-md border-[#efefef] p-4 px-4">
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-bold ">Filter Options</h1>
-          <button className="p-3 bg-blue-600 text-white font-bold rounded-lg px-8">Filter</button>
+          <button className="p-3 bg-blue-600 text-white font-bold rounded-lg px-8">
+            Filter
+          </button>
         </div>
         <div className="mt-3 flex gap-2 md:gap-4 md:flex-row flex-col">
           <div className="flex flex-col md:w-1/4">
             <small>Return Per Annum</small>
             <select className="border-[1px] border-black rounded-lg p-2">
-              <option value="All" disabled>All</option>
+              <option value="All" disabled selected>
+                All
+              </option>
               <option value="Lowest">Lowest</option>
               <option value="Highest">Highest</option>
             </select>
           </div>
-          <div className="flex flex-col md:w-1/4">
+          <div className={filterOptionsStyle}>
             <small>Location</small>
             <select className="border-[1px] border-black rounded-lg p-2">
-              <option value="All" disabled selected>Any</option>
+              <option value="All" disabled selected>
+                Any
+              </option>
               <option value="Chicago">Chicago</option>
               <option value="MY">New York</option>
             </select>
           </div>
-          <div className="flex flex-col md:w-1/4">
+          <div className={filterOptionsStyle}>
             <small>Investment Term</small>
             <select className="border-[1px] border-black rounded-lg p-2">
-              <option value="All" disabled selected>All</option>
+              <option value="All" disabled selected>
+                All
+              </option>
               <option value="Lowest">Lowest</option>
               <option value="Highest">Highest</option>
             </select>
           </div>
-          <div className="flex flex-col md:w-1/4">
+          <div className={filterOptionsStyle}>
             <small>Property Type</small>
             <select className="border-[1px] border-black rounded-lg p-2">
-              <option value="Any" disabled selected>Any</option>
+              <option value="Any" disabled selected>
+                Any
+              </option>
               <option value="Lowest">Bungalow</option>
               <option value="Highest">Town Home</option>
               <option value="Highest">Condo</option>
             </select>
           </div>
-          <div className="flex flex-col md:w-1/4">
+          <div className={filterOptionsStyle}>
             <small>Investment Type</small>
             <select className="border-[1px] border-black rounded-lg p-2">
-              <option value="Any" disabled selected>Any</option>
+              <option value="Any" disabled selected>
+                Any
+              </option>
               <option value="Lowest">Full Property</option>
               <option value="Highest">Part property</option>
             </select>
           </div>
+          {!expandFilter && (
+            <div className="md:hidden">
+              <button onClick={()=>setExpandFilter(true)} className="flex mx-auto items-center gap-3 mt-5">
+                Expand <FaChevronDown />
+              </button>
+            </div>
+          )}
         </div>
       </div>
       <div className="p-4 flex flex-wrap">
