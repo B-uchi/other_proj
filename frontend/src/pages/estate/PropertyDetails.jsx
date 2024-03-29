@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Footer from "../../components/estate/Footer";
 import Question from "../../components/estate/Question";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Listings from "../../components/estate/Listings";
 
 const PropertyDetails = () => {
   const locationn = useLocation();
@@ -18,6 +19,8 @@ const PropertyDetails = () => {
     totalRaised,
     propertyType,
   } = data;
+
+  document.title = `${street} - Property`;
 
   return (
     <div className="w-full">
@@ -67,7 +70,7 @@ const PropertyDetails = () => {
               </div>
               <div className="text-left mt-7">
                 <div className="border-[1px] mb-2 h-[20px] rounded-sm border-slate-400 overflow-hidden">
-                    <div className="w-[40%] bg-slate-400">.</div>
+                  <div className="w-[40%] bg-slate-400">.</div>
                 </div>
                 <div className="w-full flex justify-between text-sm">
                   <p>${totalRaised}</p>
@@ -77,11 +80,38 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
-        <div className="w-[95%] md:w-[80%] mb-10 mt-3">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum,
-            odit.
-          </p>
+        <div className="w-[95%] md:w-[80%] mb-10 mt-3 flex justify-between">
+          <div className="p-3 w-[60%]">
+            <h1 className="text-xl font-bold font-montserrat">
+              Property Details
+            </h1>
+            <p className="mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              doloremque, quas, quidem, voluptate voluptatum dolores
+              exercitationem iusto autem ipsa nemo quae quibusdam. Quisquam
+              voluptates, doloribus, quae, quod, voluptate quos quas
+              exercitationem iusto autem ipsa nemo quae quibusdam. Quisquam
+              voluptates, doloribus, quae, quod, voluptate quos quas
+            </p>
+          </div>
+          <div className="w-[30%] p-3 text-right">
+            <h1 className="text-xl font-bold font-montserrat">
+              Investment Advantages
+            </h1>
+            <p className="mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+              doloremque, quas, quidem.
+            </p>
+          </div>
+        </div>
+        <div className="w-[95%] md:w-[80%] p-3">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold font-montserrat">
+              Open Investment Opportunities
+            </h1>
+            <small>A whole new world of financial returns await you</small>
+          </div>
+          <Listings />
         </div>
       </div>
       <Question />

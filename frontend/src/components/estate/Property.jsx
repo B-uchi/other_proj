@@ -1,13 +1,15 @@
-import React from "react";
+import { set } from "mongoose";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'sonner'
 
 const Property = ({ property, id }) => {
+  const [bleh, setBleh] = useState(false)
   const navigate = useNavigate()
   const { img, street, location, roi, target } = property;
 
   const viewProperty = () =>{
-    navigate(`/properties/${id}`, { state: property });
+    navigate(`/listings/${id}`, { state: property }, ()=>{setBleh(true)});
   }
 
   return (

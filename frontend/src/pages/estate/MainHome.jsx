@@ -15,12 +15,17 @@ function MainHome() {
       <Homepage />
       <Trust />
       <HeroSection />
-      <Listings/>
+      <div className="w-full text-center p-5 mt-5 flex-col flex items-center">
+        <h1 className="font-lato text-2xl">Property Listings</h1>
+        <div className="md:w-[70%] w-[90%]">
+          <Listings />
+        </div>
+      </div>
       <Stats />
-      <WhyVantage/>
-      <Testimonials/>
-      <Question/>
-      <Footer/>
+      <WhyVantage />
+      <Testimonials />
+      <Question />
+      <Footer />
       <div className="fixed bottom-0 w-full">
         <Risk />
       </div>

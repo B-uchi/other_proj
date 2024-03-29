@@ -19,10 +19,11 @@ const EstateRoutes = () => {
       {showNavbar && <Navbar showNavbar={showNavbar} />}
       <Routes>
         <Route element={<MainHome />} path="/" />
+        <Route path="/*" element={<Navbar />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/listings" element={<Listings />} />
-        <Route path="/properties/:id" element={<PropertyDetails />} />
+        <Route path="/listings/:id" element={<PropertyDetails />} />
       </Routes>
     </div>
   );

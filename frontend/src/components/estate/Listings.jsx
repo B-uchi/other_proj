@@ -10,6 +10,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -17,6 +21,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -24,6 +32,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -31,6 +43,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -38,6 +54,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -45,6 +65,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -52,6 +76,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -59,6 +87,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -66,6 +98,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -73,6 +109,10 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
     {
       img: house,
@@ -80,18 +120,19 @@ const Listings = () => {
       location: "lorem ipsum lorem",
       roi: "8.51",
       target: "110,000",
+      investmentType: "Full Property",
+      investmentTerm: "12 months",
+      totalRaised: "40,000",
+      propertyType: "Bungalow",
     },
   ];
   return (
-    <div className="p-5">
+    <div className="">
       <div className="container mx-auto flex flex-col items-center">
-        <h1 className="font-lato text-2xl">
-          Property Listings
-        </h1>
-        <div className="md:w-[70%] w-[90%] mt-2 p-1">
+        <div className="p-1 w-full">
           <div className="w-full flex gap-6 p-3 overflow-x-scroll">
             {properties.map((property, index) => (
-              <Property key={index} property={property} />
+              <Property key={index} property={property} id={index}/>
             ))}
           </div>
           <p className="text-center underline">
