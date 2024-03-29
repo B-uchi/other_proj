@@ -40,29 +40,29 @@ const Testimonials = () => {
         <h1 className="font-montserrat font-bold text-2xl text-center">
           Hear what they say about us
         </h1>
-        <div className="justify-center flex gap-5 mt-6 items-end w-full md:w-[75%]">
-          <div className="border-[1px] shadow-xl hidden md:block  p-3 rounded-lg w-[500px] md:h-[220px] relative bg-white border-purple-200">
+        <div className="justify-center flex gap-5 mt-6 items-end w-full lg:w-[75%]">
+          <div className="border-[1px] shadow-xl hidden md:block  p-3 rounded-lg w-[500px] md:h-[220px] overflow-y-auto bg-white border-purple-200">
             <p className="font-siliguri text-center">
               {testimonials[index].message}
             </p>
-            <h1 className="absolute bottom-5 left-[50%] -translate-x-[50%]">
+            <h1 className="font-bold text-center mt-4">
               {testimonials && testimonials[index].name}
             </h1>
           </div>
-          <div className="border-[1px] shadow-xl  p-3 rounded-lg w-[100%] md:w-[500px] md:h-[250px] relative bg-white border-purple-200">
+          <div className="border-[1px] shadow-xl  p-3 rounded-lg w-[100%] md:w-[500px] md:h-[250px] overflow-y-auto bg-white border-purple-200">
             <p className="font-siliguri font-normal text-center">
               {testimonials[(index + 1) % testimonials.length].message}
             </p>
-            <h1 className="md:absolute bottom-5 left-[50%] text-center mt-3 md:-translate-x-[50%]">
+            <h1 className="font-bold text-center mt-4">
               {testimonials &&
                 testimonials[(index + 1) % testimonials.length].name}
             </h1>
           </div>
-          <div className="border-[1px] shadow-xl  hidden md:block p-3 rounded-lg w-[500px] md:h-[220px] relative bg-white border-purple-200">
+          <div className="border-[1px] shadow-xl  hidden md:block p-3 rounded-lg w-[500px] md:h-[220px] overflow-y-auto bg-white border-purple-200">
             <p className="font-siliguri font-normal text-center">
               {testimonials[(index + 2) % testimonials.length].message}
             </p>
-            <h1 className="absolute bottom-3 left-[50%] -translate-x-[50%]">
+            <h1 className="font-bold text-center mt-4">
               {testimonials &&
                 testimonials[(index + 2) % testimonials.length].name}
             </h1>
