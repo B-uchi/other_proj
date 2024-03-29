@@ -20,21 +20,21 @@ const HeroSection = () => {
               wealth today with ease and confidence.
             </p>
           </div>
-          <div className="mt-5 flex flex-col">
+          <div className="mt-10 flex flex-col">
             <div className="">
-              <p className="text-center md:text-left">Get started in 3 easy steps:</p>
+              <p className="text-center font-bold text-xl md:text-left">Get started in 3 easy steps:</p>
               <div className=" w-full mt-5 flex justify-between">
-                <div className="flex flex-col items-center p-4 bg-gray-100 rounded-md justify-center">
-                  <MdOutlinePersonAddAlt size={20}/>
+                <div className="flex flex-col items-center p-4 bg-gray-100 border-[1px] border-[#efefef] rounded-full w-[110px] justify-center">
+                  <MdOutlinePersonAddAlt size={40}/>
                   <small>1. Register</small>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-100 rounded-md justify-center">
-                  <FaHouseCircleCheck size={20}/>
+                <div className="flex flex-col items-center p-4 bg-gray-100 border-[1px] border-[#efefef] rounded-full w-[110px] justify-center">
+                  <FaHouseCircleCheck size={40}/>
                   <small>2. Choose</small>
                   <small>Property</small>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-100 rounded-md justify-center">
-                  <FaDollarSign size={20}/>
+                <div className="flex flex-col items-center p-4 bg-gray-100 border-[1px] border-[#efefef] rounded-full w-[110px] justify-center">
+                  <FaDollarSign size={40}/>
                   <small>3. Deposit</small>
                 </div>
               </div>

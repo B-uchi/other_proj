@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaAward, FaDollarSign } from "react-icons/fa";
+import { TbWorldSearch } from "react-icons/tb";
+import { MdOutlineSupportAgent } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
@@ -38,7 +41,7 @@ const Testimonials = () => {
     <div className="p-5 mt-5 mb-5">
       <div className="container mx-auto flex items-center flex-col">
         <h1 className="font-montserrat font-bold text-2xl text-center">
-          Hear what they say about us
+          Ease With Vantage Investments
         </h1>
         <div className="justify-center flex gap-5 mt-6 items-end w-full lg:w-[75%]">
           <div className="border-[1px] shadow-xl hidden md:block  p-3 rounded-lg w-[500px] md:h-[220px] overflow-y-auto bg-white border-purple-200">
@@ -68,7 +71,7 @@ const Testimonials = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center mt-5 gap-7">
+        {/* <div className="flex justify-center mt-5 gap-7">
           <button
             onClick={prevSlide}
             className="bg-[#212121] text-white rounded-md p-4 px-4"
@@ -81,6 +84,34 @@ const Testimonials = () => {
           >
             <FaChevronRight />
           </button>
+        </div> */}
+        <div className="justify-center flex border-purple-200 border-[1px] gap-5 mt-6 items-end w-full lg:w-[75%] bg-white p-5 rounded-lg shadow-lg">
+          <p className="font-siliguri font-normal">
+            At our core, we're property enthusiasts. Our cutting-edge investment
+            platform is powered by a dedicated team of real estate specialists
+            scouring the globe for unique investment prospects. With meticulous
+            due diligence, we handpick properties, handle legal complexities,
+            and offer a curated selection for hassle-free portfolio
+            diversification.
+          </p>
+        </div>
+        <div className="flex md:flex-row flex-col gap-5 mt-6 w-full lg:w-[75%] ">
+          <div className="items-center gap-3 flex border-purple-200 border-[1px] bg-white p-5 rounded-lg shadow-lg md:w-1/4 font-bold">
+            <TbWorldSearch size={30}/>
+            <p>Transparency</p>
+          </div>
+          <div className="items-center gap-3 flex border-purple-200 border-[1px] bg-white p-5 rounded-lg shadow-lg md:w-1/4 font-bold">
+            <MdOutlineSupportAgent size={30}/>
+            <p>Availability</p>
+          </div>
+          <div className="items-center gap-3 flex border-purple-200 border-[1px] bg-white p-5 rounded-lg shadow-lg md:w-1/4 font-bold">
+            <FaAward size={30}/>
+            <p>Award Winning</p>
+          </div>
+          <div className="items-center gap-3 flex border-purple-200 border-[1px] bg-white p-5 rounded-lg shadow-lg md:w-1/4 font-bold">
+            <FaDollarSign size={30}/>
+            <p>Budget Friendly</p>
+          </div>
         </div>
       </div>
     </div>
