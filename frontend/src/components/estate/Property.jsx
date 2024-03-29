@@ -30,8 +30,8 @@ const Property = ({ property, id }) => {
             <p>${target}</p>
           </div>
         </div>
-        <button onClick={viewProperty} className="text-white bg-black font-bold font-inter p-3 w-full mt-5 rounded-md">View Property</button>
       </div>
+        <button onClick={viewProperty} className="text-black border-[1px] border-t-gray-300 font-inter p-3 w-full mt-5">View Property</button>
     </div>
   );
 };

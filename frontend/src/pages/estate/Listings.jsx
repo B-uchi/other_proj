@@ -255,7 +255,7 @@ const Listings = () => {
             </div>
           )} */}
         </div>
-        <div className="flex-wrap flex mt-5 justify-center md:justify-between gap-y-8">
+        <div className="flex-wrap flex mt-5 justify-center md:justify-between gap-y-8 gap-x-5">
           {properties.map((property, index) => (
             <Property
               key={index}
