@@ -8,6 +8,7 @@ import Testimonials from "../../components/estate/Testimonials";
 import Question from "../../components/estate/Question";
 import Footer from "../../components/estate/Footer";
 import Listings from "../../components/estate/Listings";
+import CrowdFunding from "../../components/estate/CrowdFunding";
 
 function MainHome() {
   return (
@@ -25,6 +26,7 @@ function MainHome() {
       <Stats />
       <WhyVantage />
       <Testimonials />
+      <CrowdFunding/>
       <Question />
       <Footer />
       <div className="fixed bottom-0 w-full">
