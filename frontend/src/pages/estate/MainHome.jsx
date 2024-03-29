@@ -16,7 +16,8 @@ function MainHome() {
       <Trust />
       <HeroSection />
       <div className="w-full text-center p-5 mt-5 flex-col flex items-center">
-        <h1 className="font-lato text-2xl">Property Listings</h1>
+        <h1 className="font-lato text-2xl">Start Your Portfolio Today</h1>
+        <small>Check out our property listings</small>
         <div className="md:w-[70%] w-[90%]">
           <Listings />
         </div>
