@@ -12,7 +12,7 @@ const Property = ({ property, id }) => {
 
   return (
     <div className="shadow-lg bg-gray-100 rounded-lg cursor-pointer">
-      <div className="w-[300px] ">
+      <div className="md:w-[300px]">
         <img src={img} className="w-full rounded-t-lg" alt="" />
       </div>
       <div className="p-3 text-center">
@@ -24,7 +24,7 @@ const Property = ({ property, id }) => {
         </div>
         <div className="text-left">
           <small>Target amount</small>
-          <div className="border-[1px] mb-2 h-[8px] rounded-sm border-slate-400"></div>
+          <div className="border-[1px] mb-2 h-[10px] rounded-sm border-slate-400"></div>
           <div className="w-full flex justify-between text-sm">
             <p>$0</p>
             <p>${target}</p>

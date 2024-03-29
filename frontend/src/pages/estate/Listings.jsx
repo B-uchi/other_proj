@@ -213,7 +213,7 @@ const Listings = () => {
           )}
         </div>
       </div>
-      <div className="p-4 flex flex-wrap">
+      <div className="flex flex-wrap">
         <div className="flex  justify-around items-center w-full mb-3">
           {/* {!showSearch ? (
             <div className="p-2">
@@ -255,7 +255,7 @@ const Listings = () => {
             </div>
           )} */}
         </div>
-        <div className="flex-wrap flex mt-5 justify-center md:justify-between gap-y-10 gap-x-5">
+        <div className="flex-wrap flex mt-5 justify-center md:justify-between gap-y-8">
           {properties.map((property, index) => (
             <Property
               key={index}
