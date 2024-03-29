@@ -19,7 +19,7 @@ const EstateRoutes = () => {
       {showNavbar && <Navbar showNavbar={showNavbar} />}
       <Routes>
         <Route element={<MainHome />} path="/" />
-        <Route path="/*" element={<Navbar />} />
+        <Route path="/*" element={<Navbar/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/listings" element={<Listings />} />

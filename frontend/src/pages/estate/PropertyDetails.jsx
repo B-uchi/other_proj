@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "../../components/estate/Footer";
 import Question from "../../components/estate/Question";
@@ -21,6 +21,10 @@ const PropertyDetails = () => {
   } = data;
 
   document.title = `${street} - Property`;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-full">
@@ -80,8 +84,8 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
-        <div className="w-[95%] md:w-[80%] mb-10 mt-3 flex md:flex-row flex-col justify-between">
-          <div className="p-3 md:w-[60%]">
+        <div className="w-[95%] md:w-[80%] mb-10 gap-3 mt-3 flex md:flex-row flex-col justify-between">
+          <div className="p-3 md:w-[70%]  bg-white rounded-lg shadow-lg border-[2px] border-[#efefef]">
             <h1 className="text-xl font-bold font-montserrat">
               Property Details
             </h1>
@@ -94,7 +98,7 @@ const PropertyDetails = () => {
               voluptates, doloribus, quae, quod, voluptate quos quas
             </p>
           </div>
-          <div className="md:w-[30%] p-3 md:text-right">
+          <div className="md:w-[35%] p-3 bg-white rounded-lg shadow-lg border-[2px] border-[#efefef]">
             <h1 className="text-xl font-bold font-montserrat">
               Investment Advantages
             </h1>
