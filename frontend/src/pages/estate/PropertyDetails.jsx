@@ -80,8 +80,8 @@ const PropertyDetails = () => {
             </div>
           </div>
         </div>
-        <div className="w-[95%] md:w-[80%] mb-10 mt-3 flex justify-between">
-          <div className="p-3 w-[60%]">
+        <div className="w-[95%] md:w-[80%] mb-10 mt-3 flex md:flex-row flex-col justify-between">
+          <div className="p-3 md:w-[60%]">
             <h1 className="text-xl font-bold font-montserrat">
               Property Details
             </h1>
@@ -94,7 +94,7 @@ const PropertyDetails = () => {
               voluptates, doloribus, quae, quod, voluptate quos quas
             </p>
           </div>
-          <div className="w-[30%] p-3 text-right">
+          <div className="md:w-[30%] p-3 md:text-right">
             <h1 className="text-xl font-bold font-montserrat">
               Investment Advantages
             </h1>
