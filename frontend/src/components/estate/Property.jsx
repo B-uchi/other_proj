@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from 'sonner'
 
-const Property = ({ property }) => {
+const Property = ({ property, id }) => {
+  const navigate = useNavigate()
   const { img, street, location, roi, target } = property;
+
+  const viewProperty = () =>{
+    navigate(`/properties/${id}`, { state: property });
+  }
+
   return (
     <div className="shadow-lg bg-gray-100 rounded-lg cursor-pointer">
       <div className="md:w-[300px] ">
@@ -22,6 +30,7 @@ const Property = ({ property }) => {
             <p>${target}</p>
           </div>
         </div>
+        <button onClick={viewProperty} className="text-white bg-black font-bold font-inter p-3 w-full mt-5 rounded-md">View Property</button>
       </div>
     </div>
   );

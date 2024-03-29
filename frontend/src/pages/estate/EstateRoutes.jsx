@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Listings from "./Listings";
 import Navbar from "../../components/estate/Navbar";
+import PropertyDetails from "./PropertyDetails";
 
 const EstateRoutes = () => {
   const location = window.location;
@@ -21,6 +22,7 @@ const EstateRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/listings" element={<Listings />} />
+        <Route path="/properties/:id" element={<PropertyDetails />} />
       </Routes>
     </div>
   );

@@ -10,15 +10,13 @@ import InvHomepage from "./pages/investment/InvHomepage";
 import EstateRoutes from "./pages/estate/EstateRoutes";
 
 function App() {
-
-
   return (
     <Router>
       <div className="h-[100vh]">
         <Routes>
           <Route element={<EstateRoutes />} path="*" />
-          <Route path="/metals" element={<Homepage/>}/>
-          <Route path="/investments" element={<InvHomepage/>}/>
+          <Route path="/metals" element={<Homepage />} />
+          <Route path="/investments" element={<InvHomepage />} />
         </Routes>
       </div>
     </Router>

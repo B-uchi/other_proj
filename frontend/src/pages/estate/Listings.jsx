@@ -4,6 +4,7 @@ import { IoMdSearch } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
 import Property from "../../components/estate/Property";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { Toaster } from "sonner";
 
 const Listings = () => {
   const [searchParam, setSearchParam] = useState("");
@@ -89,32 +90,66 @@ const Listings = () => {
     },
   ];
 
-  const togglePanel = () => {
-    setShowPanel(!showPanel);
-  };
 
   return (
-    <div className="overflow-y-auto h-auto relative flex">
-      {showPanel && (
-        <div className="absolute h-full w-[80%] md:w-[25%] left-0 bg-[#f7f7f7] border-r-[1px] border-[#efefef] p-3">
-          <div className="flex justify-between items-center px-2">
-            <h1 className="text-xl font-bold ">Filter Properties</h1>
-            <button onClick={togglePanel}>
-              <IoClose color="red" size={30} />
-            </button>
+    <div className="overflow-y-auto p-4 h-auto relative flex flex-col">
+      <Toaster position="top-right" richColors />
+      <div className="gap-3 flex items-center justify-start p-3 px-4">
+        <h1 className="text-center font-montserrat md:text-2xl font-bold">
+          All Listed Properties
+        </h1>
+      </div>{" "}
+      <div className="w-full mt-5 bg-white border-[2px] rounded-md border-[#efefef] p-4 px-4">
+        <div className="flex justify-between items-center">
+          <h1 className="text-xl font-bold ">Filter Options</h1>
+          <button className="p-3 bg-blue-600 text-white font-bold rounded-lg px-8">Filter</button>
+        </div>
+        <div className="mt-3 flex gap-2 md:gap-4 md:flex-row flex-col">
+          <div className="flex flex-col md:w-1/4">
+            <small>Return Per Annum</small>
+            <select className="border-[1px] border-black rounded-lg p-2">
+              <option value="All" disabled>All</option>
+              <option value="Lowest">Lowest</option>
+              <option value="Highest">Highest</option>
+            </select>
+          </div>
+          <div className="flex flex-col md:w-1/4">
+            <small>Location</small>
+            <select className="border-[1px] border-black rounded-lg p-2">
+              <option value="All" disabled selected>Any</option>
+              <option value="Chicago">Chicago</option>
+              <option value="MY">New York</option>
+            </select>
+          </div>
+          <div className="flex flex-col md:w-1/4">
+            <small>Investment Term</small>
+            <select className="border-[1px] border-black rounded-lg p-2">
+              <option value="All" disabled selected>All</option>
+              <option value="Lowest">Lowest</option>
+              <option value="Highest">Highest</option>
+            </select>
+          </div>
+          <div className="flex flex-col md:w-1/4">
+            <small>Property Type</small>
+            <select className="border-[1px] border-black rounded-lg p-2">
+              <option value="Any" disabled selected>Any</option>
+              <option value="Lowest">Bungalow</option>
+              <option value="Highest">Town Home</option>
+              <option value="Highest">Condo</option>
+            </select>
+          </div>
+          <div className="flex flex-col md:w-1/4">
+            <small>Investment Type</small>
+            <select className="border-[1px] border-black rounded-lg p-2">
+              <option value="Any" disabled selected>Any</option>
+              <option value="Lowest">Full Property</option>
+              <option value="Highest">Part property</option>
+            </select>
           </div>
         </div>
-      )}
-      <div className="overflow-y-scroll p-4 px-4 flex flex-wrap">
+      </div>
+      <div className="p-4 flex flex-wrap">
         <div className="flex  justify-around items-center w-full mb-3">
-          <div className="gap-3 flex items-center justify-start w-full">
-            <button onClick={togglePanel}>
-              <IoMenu size={30} />
-            </button>
-            <h1 className="text-center font-montserrat md:text-2xl font-bold">
-              All Listed Properties
-            </h1>
-          </div>{" "}
           {/* {!showSearch ? (
             <div className="p-2">
               <button
@@ -155,15 +190,13 @@ const Listings = () => {
             </div>
           )} */}
         </div>
-        <div className="flex-wrap flex mt-5 justify-center md:justify-evenly gap-y-10 gap-x-5">
+        <div className="flex-wrap flex mt-5 justify-center md:justify-between gap-y-10 gap-x-5">
           {properties.map((property, index) => (
             <Property
               key={index}
               property={property}
-              className="w-full bg-red-700 sm:w-1/2 md:w-1/3"
-              onClick={() => {
-                alert("Yoo nigga!");
-              }}
+              id={index}
+              className="w-full sm:w-1/2 md:w-1/3"
             />
           ))}
         </div>
