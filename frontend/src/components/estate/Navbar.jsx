@@ -45,7 +45,9 @@ const Navbar = ({ showNavbar }) => {
             </a>
           </li>
           <li className="cursor-pointer">
-            <MenuItem text={"How It Works"} />
+            <a href="/how-it-works">
+              <MenuItem text={"How It Works"} />
+            </a>
           </li>
           <li className="cursor-pointer">
             <MenuItem text={"About"} />
@@ -80,7 +82,9 @@ const Navbar = ({ showNavbar }) => {
                 </a>
               </li>
               <li className="cursor-pointer">
-                <MenuItem text={"How It Works"} />
+                <a href="/how-it-works">
+                  <MenuItem text={"How It Works"} />
+                </a>
               </li>
               <li className="cursor-pointer">
                 <MenuItem text={"About"} />

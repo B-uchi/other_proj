@@ -1,5 +1,5 @@
 import React from "react";
-import { articleList } from "../util/articles";
+import { articleList } from "../util/articles.jsx";
 import { useNavigate } from "react-router-dom";
 
 const ArticleSuggestions = () => {
@@ -26,9 +26,17 @@ const ArticleSuggestions = () => {
       </h1>
       <ul className="flex flex-col gap-4 ">
         {articleList.map((article) => (
-            <li key={article.title} className="list-inside  underline text-[#2f2f2f] hover:text-[#696969]">
-              <p className="list-disc list-item" onClick={() => viewArticle(article)}>{article.title}</p>
-            </li>
+          <li
+            key={article.title}
+            className="list-inside cursor-pointer underline text-[#2f2f2f] hover:text-[#696969]"
+          >
+            <p
+              className="list-disc list-item"
+              onClick={() => viewArticle(article)}
+            >
+              {article.title}
+            </p>
+          </li>
         ))}
       </ul>
     </div>

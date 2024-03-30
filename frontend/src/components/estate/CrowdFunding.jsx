@@ -7,7 +7,9 @@ const CrowdFunding = () => {
     <div className="mt-10 p-4 md:p-10 bg-[#212121]">
       <div className="md:w-[80%] mx-auto">
         <div className="text-center p-4 text-white">
-          <h1 className="text-3xl">Related Articles</h1>
+          <a href="/how-it-works" className="underline">
+            <h1 className="text-3xl">Related Articles</h1>
+          </a>
           <small>
             Browse through articles relating to real estate
             crowdfunding/investment

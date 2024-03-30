@@ -31,9 +31,9 @@ const Article = ({ article, id }) => {
         className="h-[50%] w-[350px] bg-cover rounded-t-lg bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${img})` }}
       ></div>
-      <div className="p-3">
+      <div className="p-2">
         <h1 className="font-bold text-xl">{title}</h1>
-        <p className="line-clamp-3 mt-3 text-[#2f2f2f]">{body}</p>
+        <div className="line-clamp-4 mt-4">{body}</div>
       </div>
       <button className="absolute bottom-0 w-full p-2 font-bold border-t-[1px] border-t-[#9e9e9e]">
         Read More
