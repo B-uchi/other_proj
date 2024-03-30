@@ -20,8 +20,8 @@ const ArticleSuggestions = () => {
     navigate(`/articles/${link}`, { state: article });
   };
   return (
-    <div className="md:w-[30%] w-[95%] mx-auto p-3 rounded-md border-[1px] border[#efefef] bg-white">
-      <h1 className="font-bold font-montserrat text-[#2f2f2f]">
+    <div className="md:w-[30%] w-[95%] mx-auto p-3 rounded-md md:border-[1px] border[#efefef] md:bg-white">
+      <h1 className="font-bold text-2xl mb-2 md:text-lg font-montserrat text-[#2f2f2f]">
         Other Related Links:
       </h1>
       <ul className="flex flex-col gap-4 ">

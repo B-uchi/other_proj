@@ -19,7 +19,7 @@ const RelatedArticles = () => {
         ></div>
         <div className="mt-5 flex md:flex-row flex-col justify-between">
           <div className="md:w-[70%] p-4">
-            <h1 className="mt-6 text-xl md:text-3xl text-center md:text-left font-montserrat text-[#2f2f2f] font-bold">{title}</h1>
+            <h1 className="mt-6 text-xl md:text-3xl text-left font-montserrat text-[#2f2f2f] font-bold">{title}</h1>
             <p className="mt-5 text-[#8d8d91] leading-loose">{body}</p>
           </div>
           <ArticleSuggestions/>
